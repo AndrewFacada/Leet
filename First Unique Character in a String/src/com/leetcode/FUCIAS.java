@@ -29,10 +29,11 @@ public class FUCIAS {
 		
 		for(Entry<Character, Integer> entry : map.entrySet()) {
 			if(entry.getValue() == 1) {
-				return entry
+				charHolder = entry.getKey();
+				return s.indexOf(charHolder);
 			}
 		}
 		
-		
+		return -1;
 	}
 }
