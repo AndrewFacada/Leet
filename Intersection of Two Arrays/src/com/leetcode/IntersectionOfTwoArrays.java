@@ -51,9 +51,6 @@ public class IntersectionOfTwoArrays {
 		}
 		
 		return resultArray;
-		
-		
-
 	}
 
 }
