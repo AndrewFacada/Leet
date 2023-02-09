@@ -1,0 +1,42 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{"Max3EvenSum","[","x_List","]"}]," ",":="," ",RowBox[
+{"(",RowBox[{"If","[",RowBox[{RowBox[{"AllTrue","[",RowBox[{"x",",","IntegerQ"}],"]"}],",",RowBox[
+{"(*",RowBox[{"<",RowBox[{RowBox[{"-","checks"}]," ","if"," ","the"," ","list"," ","is"," ","all"," ","integers"}]}],"*)"}],"\n",RowBox[
+{"If","[",RowBox[{RowBox[{"IntegerQ","[",RowBox[{"Total","[",RowBox[{"TakeLargest","[",RowBox[
+{RowBox[{"Select","[",RowBox[{"x",",","EvenQ"}],"]"}],",","3"}],"]"}],"]"}],"]"}],",",RowBox[
+{"(*",RowBox[{RowBox[{"<",RowBox[{RowBox[{"-","If"}]," ","the"," ","list"," ","is"," ","all"," ","integers"}]}],","," ",RowBox[
+{"checks"," ","if"," ","there"," ","are"," ","at"," ","least"," ","3"," ","evens"," ","elements"}]}],"*)"}],"\n",RowBox[
+{"Total","[",RowBox[{"TakeLargest","[",RowBox[{RowBox[{"Select","[",RowBox[{"x",",","EvenQ"}],"]"}],",","3"}],"]"}],"]"}]," ",","," ",RowBox[
+{"(*",RowBox[{RowBox[{"<",RowBox[{RowBox[{"-"," ","If"}]," ","there"," ","are"," ","at"," ","least"," ","three"," ","even"," ","elements"}]}],","," ",RowBox[
+{"returns"," ","the"," ","summation"," ","of"," ","largest"," ","three"," ","even"," ","elements"}]}],"*)"}],"\n","    ","0"}],"]"}],","," ",RowBox[
+{"(*",RowBox[{RowBox[{"<",RowBox[{RowBox[{"-"," ","If"}]," ","there"," ","are"," ","not"," ","three"," ","even"," ","elements"}]}],","," ",RowBox[
+{"returns"," ","0"}]}],"*)"}],"\n","\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]\[NonBreakingSpace]","x"}],"]"}],")"}]," ",RowBox[
+{"(*",RowBox[{RowBox[{"<",RowBox[{RowBox[{"-"," ","If"}]," ","there"," ","are"," ","not"," ","ONLY"," ","integers"," ","in"," ","the"," ","list"}]}],","," ",RowBox[
+{"returns"," ","the"," ","list"}]}],"*)"}]}],RowBox[{"\n","\n"}],RowBox[{RowBox[{"(*",RowBox[
+{RowBox[{"All"," ","tests"," ","given"," ","within"," ","CodeChallenges"}],"-","2022","-",RowBox[
+{"db",".","nb"}]}],"*)"}],"\n",RowBox[{"Max3EvenSum","[",RowBox[{"{",RowBox[{"1",",","2",",","3",",","4",",","5",",","6"}],"}"}],"]"}]}],"\n",RowBox[
+{"Max3EvenSum","[",RowBox[{"Range","[","1000","]"}],"]"}],"\n",RowBox[{"Max3EvenSum","[",RowBox[
+{"{",RowBox[{"1",",","3",",","5",",","7"}],"}"}],"]"}],"\n",RowBox[{"Max3EvenSum","[",RowBox[
+{"{",RowBox[{"1",",","3",",","5",",","7",",","2",",","4",",","5"}],"}"}],"]"}],"\n",RowBox[
+{"Max3EvenSum","[",RowBox[{"{",RowBox[{"1",",","2",",","3",",","4",",","x"}],"}"}],"]"}]}],
+"Input",ExpressionUUID -> "f3a60e6c-f869-4922-99ac-47cafc6c3c80"],Cell[
+BoxData["12",
+StandardForm],"Output",CellLabel -> "Out[2]= ",ExpressionUUID -> "e720ed26-27de-42b5-b24e-42314dfac45e"],Cell[
+BoxData[
+"2994",StandardForm],"Output",CellLabel -> "Out[3]= ",ExpressionUUID -> "914ae6fa-b81f-4a60-a0af-4e05c6942b1e"],Cell[
+BoxData[
+TemplateBox[{"TakeLargest","insuff","\"Cannot take \\!\\(\\*TagBox[\\\"3\\\", Short[#1, 5] & ]\\) element(s) from a list of length \\!\\(\\*TagBox[\\\"0\\\", Short[#1, 5] & ]\\).\"",2,4,1,32760060907924891571,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "e2129c2b-5557-48a8-a368-b3c093092d8c"],Cell[
+BoxData[
+"0",StandardForm],"Output",CellLabel -> "Out[4]= ",ExpressionUUID -> "c15cdafa-c94d-4a3d-90fc-18c51b3c390b"],Cell[
+BoxData[
+TemplateBox[{"TakeLargest","insuff","\"Cannot take \\!\\(\\*TagBox[\\\"3\\\", Short[#1, 5] & ]\\) element(s) from a list of length \\!\\(\\*TagBox[\\\"2\\\", Short[#1, 5] & ]\\).\"",2,5,2,32760060907924891571,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "6bebda84-f488-4741-acbb-d062e76df645"],Cell[
+BoxData[
+"0",StandardForm],"Output",CellLabel -> "Out[5]= ",ExpressionUUID -> "77a0a945-d639-46ff-ad57-92f0d9adc4ee"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"1",",","2",",","3",",","4",",","x"}],"}"}],StandardForm],"Output",
+CellLabel -> "Out[6]= ",ExpressionUUID -> "5c7b4ec3-6613-4c34-8320-ee9e82765483"]},
+Open],ExpressionUUID -> "790e6663-7f44-44ef-a64a-aa7b23b1f8a5"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13.2 for Wolfram Cloud 1.64.1 (November 30, 2022)"]
